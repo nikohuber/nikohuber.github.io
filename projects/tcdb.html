@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh wip</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> Tech Crew Database (TCDB) </h3>
+            </div>
+
+            <div id = "content">
+
+                <p>
+
+                    During my time at the Rochester Institute of Technology, I took up a job and became an active member of the RIT Tech Crew, which at first seemed like a student run audio provider, but after two years I have realized how large of an operation it is. Not only do we provide sound support for on campus events, we also provide rigging, power, lighting, and much more. 
+                    <br><br> Perhaps the most pressing realization when joining Tech Crew was the sheer amount of equipment that has been acquired over the tens of years of the organizations operation and available for students to train and operate. 
+                    <br><br> The existing system for maintaining inventory on items was very rudimentary. A group of student-workers were tasked with going through all of our spaces, and counting the items in storage locations. Furthermore, the process to pack for jobs, which required gathering all of the compenents necessary for a system, was most literally a piece of printed paper showing a list of all the total inventory. 
+                    <br><br> In concurrance with a Rich Media Web App Development class final project, I sought to find a solution to building packlists and maintaining proper inventory. One of the most promising solutions for integration was Airtable, an excel style sheet website with an easy to use API for web integration. I had sought out to tackle the issue of the paper packlists and provide a web app for seeing currently available gear and building virutal collection of items. 
+                    <br><br> By utilizing the Airtable API, it allowed for the segmentation of itmes that are available and unavailable by adding a simple boolean attribute to individual items. Each item had existing attributes such as location, quantity, and availability. These could all be easily edited in the Airtable website for those that were doing current inventory and signifying what items went on what job. 
+                    <br><br> The virtual packlist takes every currently available item in the TCDB in an api call, and then displays all information. Additionally, a list of filters are dynamically gnenrated based on the attributes of items in the TCDB. Those filters are then further sorted when more are applied, only showing what is available in each circumstance. 
+                    <br><br> TCDB as of right now has been a proof of concept that our existing system can easily be transferred to a web based alternative with ease and will provide more quality of life improvements when packing for jobs and doing inventory. It was incredibly nice to see a project have siginficant relevance and help a group that I am involved with! 
+
+                </p>
+
+            </divs>
+        </div>
+
+    </div>
+</body>
+</html>

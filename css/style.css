@@ -1,0 +1,132 @@
+body{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+    color: rgb(15,15,15);
+}
+
+#title {
+    margin: 0px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(229, 188, 229), rgb(100, 170, 200));
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#title:after{
+    animation: rotate-gradient linear 1s infinite;
+}
+
+.titleitem ul{
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+#thoughtsExpanded, #ideasExpanded, #otherExpanded{
+    font-size: 16px;
+    display: none;
+}
+
+
+#menu{
+    text-align: right;
+    margin-right: 50px;
+    display: block;
+}
+
+#innerBox{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    padding-right: 50px;
+}
+
+#menu ul:hover{
+    background-color: black;
+    color: white;
+}
+
+#innerBox div a{
+    text-decoration: none;
+    color: rgb(15,15,15);
+}
+
+
+#innerBox div a:visited{
+    text-decoration: none;
+}
+
+#innerBox div a:hover{
+    background-color: rgb(15,15,15);
+    color: white;
+}
+
+.link{
+    padding: 10px 20px 10px 0px;
+    display: block;
+}
+
+#short{
+    padding-left: 15px;
+}
+
+@media screen and (width < 900px) {
+
+    #title{
+        display: block;
+        height: 100%;
+    }
+
+    #header{
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    #menu{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        margin-right: 0px;
+    }
+
+    #short{
+        padding: 0px 25px;
+        margin: 0px;
+    }
+
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes rotate-gradient {
+    to { transform: rotate(360deg) }
+  }

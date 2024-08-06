@@ -1,0 +1,93 @@
+body{
+    width: 100%;
+    position: absolute;
+    margin: 0px;
+    background-color: rgb( 15,15,15);
+    color:white;
+}
+
+#gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(230, 170, 230);
+    height: 35px;
+    width: 100%;
+}
+
+#main{
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(15,15,15);
+    margin-top: 50px;
+}
+
+#header{
+    font-size: 20px;
+    padding-top: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 75px;
+}
+
+#header h3{
+    padding: 0px 25px;
+}
+
+#content{
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 65px 75px 75px;
+}
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+@media screen and (width < 700px) {
+
+    #main{
+        margin: 0px;
+        width: 100%;
+    }
+
+    #header{
+        justify-content: left;
+        width: 100%;
+        background-color: rgb(25,25,25);
+        padding: 0px;
+    }
+
+    #content{
+        margin-top: 25px;
+    }
+
+    #header h3{
+        text-wrap: wrap;
+    }
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes rotate-gradient {
+    to { transform: rotate(360deg) }
+  }
