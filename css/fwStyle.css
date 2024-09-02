@@ -51,11 +51,31 @@ body {
     "slnt" 0;
 }
 
+.image{
+    width: 100%;
+    padding-top: 75px;
+}
+
+
+.imageText{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+    text-decoration-color: rgb(230, 170, 230);
+}
+
 
 @media screen and (width < 700px) {
 
     #main{
         margin: 0px;
+        width: 100%;
+    }
+
+    .image{
         width: 100%;
     }
 
