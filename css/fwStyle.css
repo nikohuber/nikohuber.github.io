@@ -51,13 +51,13 @@ body {
     "slnt" 0;
 }
 
-.processImage{
+.image{
     width: 100%;
     margin-top: 75px;
 }
 
 
-.processText{
+.imageText{
     display: block;
     margin-top: 15px;
     margin-bottom: 75px;
