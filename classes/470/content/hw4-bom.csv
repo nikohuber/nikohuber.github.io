@@ -1,0 +1,5 @@
+﻿Name,Quantity,Component
+"U1",1," Arduino Uno R3"
+"Rpot1",1,"250 kΩ Potentiometer"
+"C2, C3",2,"1 uF, 16 V Polarized Capacitor"
+"SERVO1",1,"Positional Micro Servo"
