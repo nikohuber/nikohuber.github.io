@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> hw8 blog post </h3>
+            </div>
+
+            <p id = "content">
+
+                For homework eight we utilized a tilt-sensor to control a timed countdown using six red LEDs. The end result was a hourglass-like control surface where you could shake the breadboard to start the timer, and it would then count down in a hour and ultimately all the LEDs would light up red. Shaking the board during the countdown would then reset the counter and it would start all over again. 
+                <br><br>Working with the millis() function for timing opened up a lot of new possibilities for scripting and having more interactive interfaces. Being able to actively interrupt the countdown was very fun too- I am starting to see a pattern of “those more interactive one of these examples gets, the more fun it is!” 
+                
+                <img class = "image" src = "img/hw8-1.jpg" width = "100%">
+                <span class = "imageText"> The setup. </span>
+                
+                <img class = "image" src = "img/hw8-1.gif" width = "100%" height = "100%">
+                <span class = "imageText"> Funcitoning hourglass </span>
+                
+                <embed src="content/hw8-wire.pdf" width="100%" height = "400px"/>
+                <span class = "imageText"> Circuit Diagram </span>
+
+            </p>
+        </div>
+
+        <script src = "./js/bounds.js"></script>
+    </div>
+</body>
+</html>
