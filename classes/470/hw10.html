@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> hw10 blog post </h3>
+            </div>
+
+            <p id = "content">
+
+                In week 10, we further developed the arduino controlled DC motor, to better control the speed of the motor and invert direction. To do this, we integrated an integrated circuit into our setup, specifically the H-Bridge motor controller, to do a lot more with our limited breadboard space. It was pretty great to actually use integrated circuits in a small setup and see how they help minimize overall utilized space, and condense simple functions into a smaller controller. 
+                <br><br>I had a lot of trouble getting the buttons and potentiometer to seat nicely in my breadboard- all in all it was very frustrating. Especially when things kept unseating and messing with my control circuits. Nonetheless, always nice to see physical movements and reactions to pressing buttons and turning knobs. 
+                
+                    
+                <img class = "image" src = "img/hw10.jpg" width = "100%">
+                <span class = "imageText"> The setup. </span>
+                
+                <embed src="content/hw10-wire.pdf" width="100%" height = "400px"/>
+                <span class = "imageText"> Circuit Diagram </span>
+
+                <iframe src="https://app.arduino.cc/sketches/4e19cabb-b81b-4b17-993e-77ef11ff410d?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                <span class = "imageText"> Code </span>
+            </p>
+        </div>
+
+        <script src = "./js/bounds.js"></script>
+    </div>
+</body>
+</html>
