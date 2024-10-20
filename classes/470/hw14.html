@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> hw14 blog post </h3>
+            </div>
+
+            <p id = "content">
+                Homework 14 saw the introduction of using serial communication for interdevice communication and controlling external applications. By using just a single potentiometer, we were able to change the color of the arduino logo in processing. A serial communication was established between the application and arduino and allowed for us to stream the output of the potentiometer. 
+                <br><br>Data send over serial is usually serialized and not the same as a number or character, but a collection of them. It was very interesting to see the saw monitor in the arduino ide and see the characters it sends for each relevant potentiometer position. Then watching the response get read and deserialized to numbers.
+                <br><br>This opens up a lot of thoughts inside my head for using arduino to control other applications and have alternate input controllers for desktop applications!!!
+            
+                <img class = "image" src = "img/hw14.jpg" width = "100%">
+                <span class = "imageText"> The setup. </span>
+
+                <img class = "image" src = "img/hw14.gif" width = "100%">
+                <span class = "imageText"> Controlling something elseee! </span>
+                
+                <embed src="content/hw14-wire.pdf" width="100%" height = "400px"/>
+                <span class = "imageText"> Circuit Diagram </span>
+                
+                <iframe src="https://app.arduino.cc/sketches/b0f30c06-4a22-40dc-bf43-0b911e04a718?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                <span class = "imageText"> Code </span>
+            </p>
+        <script src = "./js/bounds.js"></script>
+    </div>
+</body>
+</html>
