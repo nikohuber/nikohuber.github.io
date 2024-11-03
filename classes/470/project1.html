@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> project 1 blog post </h3>
+            </div>
+
+            <p id = "content">
+                <h2>Background</h2>
+                For Project 1 in IGME 470 we had to create some sort of an interface to collect or interact with a plant. 
+                <br><br>
+                <h2>Sensors?</h2>
+                I had a sensor kit that has been sitting in a little box in the corner of my room for years at this point, and when thinking of ways to interact properly with a plant I figured I could use some of the sensors that I already had on hand. 
+                <br><br>
+                <h2>Original Plan</h2>            
+                My initial plan for project 1 was to use an array of sensors and an oled display to display relevant information for the user- and have it be situated by the plant to give a HUD style display to see what is going on with the plant- With a soil sensor and an ultrasonic sensor so you could “say hi” to your plant. 
+                <br><br><br>
+
+                <embed src="content/project1.pdf" width="100%" height = "400px"/>
+                <span class = "imageText"> Circuit Diagram </span>
+
+                <h2>Picking a Sensor</h2>        
+                After assessing the sensor that I already had on hand, I was incredibly interested to delve more into the <a href = "https://components101.com/sensors/dht11-temperature-sensor">DHT11</a> temperature / humidity sensor that I had. It was very interesting to read up on the sensor and realize that is uses a serial communication between the sensor and the mainboard. This would allow for both the temperature and the humidity information to be sent over one output pin. 
+                <br><br>  
+                <h2>Control Inputs</h2>  
+                With the sensor input being finalized, I wanted to figure out a better way to control and add a level of “setup” to the sensor. So I decided to program in a button system to edit and modify the desired humidity and temperature. This would allow you to optimize a room to best suit the plant that you are trying to keep alive. 
+                <br><br>
+
+                <h2>Parts</h2>
+
+                <ul>
+                    <li>Piezo</li>
+                    <li>Arduino Uno</li>
+                    <li>Potentiometer</li>
+                    <li>Button</li>
+                    <li>10K Resistor</li>
+                    <li>DHT11</li>
+                </ul>
+                            
+                <img class = "image" src = "img/project1.jpg" width = "100%">
+                <span class = "imageText"> The Final Circuit on a Breadboard. </span>
+
+                <h2>Functionality</h2>
+                Two presses on the button would allow for the user to enter a settings setup mode, and there are piezo beeps to remind you that the process is active and the button was pressed. The potentiometer would then allow you to select the desired values +/- 10. After exiting settings mode, if the room ambient temperature or humidity was above or below the desired values, the piezo would beep (eerily similar to hospital monitoring sounds). 
+                <br><br>
+                
+                <h2>Code</h2>
+                <iframe src="https://app.arduino.cc/sketches/df544a38-ba7c-4bc5-a98e-006477d02010?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+
+                <h2>Thoughts</h2>
+                The process for entering a setup menu with a physical interface was incredibly satisfying, especially with the piezo for another audible reaction. 
+                <br><br>
+                <h2>Closure</h2>
+                While I wish I could have spent more time building a more useable user interface to see results better, I was very glad on how the end result came out! 
+                <br><br>
+            </p>
+        <script src = "./js/bounds.js"></script>
+    </div>
+</body>
+</html>
