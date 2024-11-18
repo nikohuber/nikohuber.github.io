@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> project 2 blog post </h3>
+            </div>
+
+            <p id = "content">
+
+            <h2>Background</h2>
+            The goal of project 2 was to create some sort of an interactive interface with a software application. 
+
+            <br><br>
+            The second this project was introduced I wanted to do something that was completely out of the ordinary- or just plain unconventional! While thinking of control surfaces, I was deeply into learning various lighting consoles and their interfaces. So the first thing that came to my mind was trying to have a very unconventional lighting control system. 
+
+            <br><br>
+            The first thing that came to mind was using capacitive touch points to send commands to a computer and change buttons or toggles. Or even a slider to control intensity.
+
+            <br><br>
+            <h2>Protocols...</h2>
+            Very quickly, I found myself deep in a hole of protocols and trying to pick one. MIDI, OSC, DMX, there were so many to pick from it was overwhelming. I ended up settling on trying to replicate an HID keyboard- as it would work with many different sources and ultimately be a complete control surface for an infinite number of applications, as opposed to the three or four lighting control softwares that aren’t locked behind some absurd paywall. While I surely could have used a converter to convert MIDI messages into alternate inputs, but this was more of a standalone option that wouldn’t need alternate software or drivers to work. 
+
+            <br><br>
+            <h2></h2>
+            I scoured the internet for references on how to use the Arduino UNO for emulating keyboard input and to my convenience, it inherently doesn’t work :D
+
+            <br><br>
+            The solution: keep looking. 
+
+            <br><br>
+            <h2>References</h2>
+            There were a few tutorials that were incredibly outdated and referenced using an UNO as a HID keyboard. There were later 32 bit versions of the UNO that have that supporter inherently, as with the <a href = “https://docs.arduino.cc/language-reference/en/functions/usb/Keyboard/”> keyboard library </a>
+
+            <br><br>
+            <h2>My Saviour</h2>
+            However, none would work on my version of the UNO. Until I stumbled upon <a href = “https://www.instructables.com/How-to-Make-a-Arduino-HID-Keyboard/”> this! </a> 
+
+            <br><br>
+            This tutorial outlined almost everything that I needed to emulate a keyboard with an arduino, and described the HID buffer and key tables very well! Additionally, it highlighted an extra step of reflashing the firmware on the UNO to a version that would emulate a keyboard on devices. With this extra knowledge, I felt like I was able to combine the capacitive sensor code with the keyboard inputs to create a working and scaleable controller. 
+
+            <br><br>
+            <h2>Coming Together</h2>
+            It truly all came together at once. After testing all the individual pieces, the whole controller started to form. There was just one issue: what would I interact with?
+
+            <br><br>
+            <h2>Code</h2>
+            <iframe src="https://app.arduino.cc/sketches/c618609e-866d-42c7-980d-eaa1b0a14866?view-mode=embed" style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+
+            <br><br>
+            <h2>Parts</h2>
+
+            <ul>
+                <li>Pumpkin</li>
+                <li>Arduino Uno</li>
+                <li>Lime</li>
+                <li>LEDs</li>
+                <li>10K Resistor</li>
+                <li>220ohm Resistor</li>
+            </ul>
+                    
+            <br><br>
+            <embed src="content/project2.pdf" width="100%" height = "400px"/>
+            <span class = "imageText"> Circuit Diagram </span>
+
+            <br>
+            <h2>Pumpkin</h2>
+            I had planned on using baby carrots as touch point, but after seeing how many digital inputs each channel would take up (4), I wanted to revisit that idea with something a little more, visually appealing. Two small baby carrots would do no convincing that it was a good controller. Thus, I settled on a pumpkin that was still on a windowsill from October, and to spice things up more I had a lime as the second touch point. 
+
+            <img class = "image" src = "img/project2.jpg" width = "100%">
+            <span class = "imageText"> The Whole System! </span>
+
+            <br><br>
+            <h2>Test System Outline. </h2>
+            Touch point -> Arduino UNO -> HID Keystroke -> Resolume Arena Control Layer (strobe and feedback layers)
+
+            <img class = "image" src = "img/project2.gif" width = "100%">
+            <span class = "imageText"> With Interaction </span>
+
+            <br><br>
+            <h2>And Finally:</h2>
+            The end product of this project was a lot more put together than I was expecting. Without the need for any drivers, it would connect to laptops and be recognized as a keyboard inherently! It would also work with basically any capacitive surface, or even vegetables. 
+            <br><br><br>
+            </p>
+        <script src = "./js/bounds.js"></script>
+    </div>
+</body>
+</html>
