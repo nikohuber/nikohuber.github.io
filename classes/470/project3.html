@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "/css/fwStyle.css">
+    <title>nh</title>
+</head>
+<body>
+    <div id = "gradient">
+        <div id = "main">
+            <div id = "header">
+                <a href = "/index.html"><img class = titleitem id = "logo" src = "/img/nhlogo.png" width = 120 height = 120></a>
+                <h3 id = title> project 3 blog post </h3>
+            </div>
+
+            <p id = "content">
+
+            <h2>Background</h2>
+            The goal of project 3 was to create some sort of an artistic experience. 
+
+            <br><br>
+
+            Building custom lighting fixtures has always been a dream of mine- and with the doors that have been opened in my head with arduinos and microcontrollers as a whole. The amount of libraries and dependencies that have been created for IOT devices and small microcontrollers is incredible! 
+
+            <h2>What to Make?</h2>
+            One of my favorite lighting fixtures is an LED tube light. I had always wanted one so badly when I started to get more into lighting. Well, to backtrack I was really into photography and videography for a while- and tube lights were almost a standard for wash lighting and as I started to learn more about stage lighting and programmed a few of my own shows, tube lights and pixel fixtures are incredibly neat! (and being used much more often in shows nowadays)
+            <br><br>
+            <h2>The Big Issue: Cost </h2>
+            Most tubes are insanely expensive, upwards of hundreds of dollars. While the lumen output and color reproduction is likely incredible, I wanted to try and make one for significantly less. You can find tube light covers designed for protecting larger industrial tube lights, and theyre $3 and fairly well built! For diffusion, parchment paper works pretty well with LED strips and smaller led pixels. I folded the paper and fit in in the tube, and then added an argb led strip. I had tried this with a 12v rgb led strip and transistors, but found that it was much easier to use a 5v argb led stip and directly control the pixels with wled, an incredibly feature rich esp32 library for controlling LEDs!
+            <br><br>
+            
+            <h2>Changing Direction</h2>
+            The primary decision for using a 5v argb strip was so that I could natively use the WLED library for driving pixels rather than have to use a dedicated artnet decoder. This would also allow me to use SPI rather than just RGB control for the whole strip! Meaning I can have control over each pixel on the strip rather than just one fixed color for every pixel on the strip. 
+            Perhaps the most important library I used was the <a href = “https://kno.wled.ge/”> WLED Library </a>. This allowed me to have control over various settings over a web server and also allowed me to wirelessly transmit artnet packets over wifi from resolume arena, or any other lighting software of my choice. 
+
+            <br><br>
+            <h2>Parts</h2>
+
+            <ul>
+                <li>ESP32-devkit v1</li>
+                <li>5v PSU</li>
+                <li>ARGB LED Strip</li>
+                <li>Tube Light Cover</li>
+                <li>Parchment Paper</li>
+            </ul>
+
+
+            
+            <img class = "image" src = "img/project3.gif" width = "100%">
+            <span class = "imageText"> Resolume Controlling Wirelessly! </span>
+
+            <h2>What's Next</h2>
+            I would like to build more of these, and I would also like to build a wired ethernet version that would be a lot more reliable in show conditions. Wifi is too unstable and packet loss is inevitable. Having a wired version would make operation much more efficient and simpler. I have a WT32-eth01 sitting around that would be perfect for this role. Or even with a different route, I could have a dmx decoder on each fixture that would convert dmx to spi, and could be more of a modular setup. I feel like there are many more directions that I could take this project to make it more of a standalone product that can be integrated into real-world show environments. 
+        
+                    
+            <br><br>
+           
+            <br><br><br>
+            </p>
+        <script src = "./js/bounds.js"></script>
+    </div>
+</body>
+</html>
