@@ -3,17 +3,10 @@ body{
     position: absolute;
     margin: 0px;
     background-color: rgb( 15,15,15);
-    color:white;
+    color:rgb(240,240,240);
 }
 
-#gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(230, 170, 230);
-    height: 35px;
-    width: 100%;
-}
+
 
 #main{
     margin: 0 auto;
@@ -29,6 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0px 75px;
+
 }
 
 #header h3{
@@ -36,9 +30,10 @@ body{
 }
 
 #content{
+    margin-top: 25px;
     font-weight: 500;
     font-size: 14px;
-    padding: 0px 65px 75px 75px;
+    padding: 0px 65px 105px 75px;
 }
 
 
